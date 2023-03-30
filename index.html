@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<style>
+#myDIV {
+  height: 250px;
+  overflow: auto;
+}
+
+#content {
+  height: 800px;
+  width: 800px;
+  background-color: coral;
+}
+</style>
+
+<body>
+<h1>The Element Object</h1>
+<h2>The scrollTop and scrollLeft Properties</h2>
+
+<p>Click "Scroll" to scroll the contents of "myDIV" to 50px horizontally and 10px vertically.</p>
+
+<button onclick="myFunction()">Scroll</button><br><br>
+
+<div id="myDIV">
+  <div id="content">
+  <p>Some text inside a div element.</p>
+  <p>Some text inside a div element.</p>
+  <p>Some text inside a div element.</p>
+  <p>Some text inside a div element.</p>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  const element = document.getElementById("myDIV");
+  
+  element.scrollTop = 10;
+  element.behaviour = "smooth";
+  
+}
+</script>
+
+</body>
+</html>
